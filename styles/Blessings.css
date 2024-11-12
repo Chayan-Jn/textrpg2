@@ -1,0 +1,74 @@
+.blessing-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    height: 100vh;
+}
+
+
+.blessings{
+    width: 100vw;
+    background-color: silver;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ 
+}
+
+.bless{
+    height: 30rem;
+    width: 25rem;
+    border: 10px rgb(23, 120, 149) solid;
+    margin: 0 1rem;
+    font-size: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    box-shadow: 4px 4px 4px black;
+}
+
+
+@keyframes flickerAnimation {
+    0% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    80% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+.bless:hover{
+
+    scale: 1.02;
+    animation: flickerAnimation 1s infinite;
+}
+
+.curse{
+    color: #150f18;
+    background:linear-gradient(125deg, #9c4dff, #9b4dca, crimson);
+    
+}
+.electric{
+    color: #FFEA00;
+    background: linear-gradient(125deg, #FFEA00, rgb(57, 16, 25));
+
+}
+.claws{
+    color: #003366;
+    background: linear-gradient(125deg, #003366, rgb(21, 1, 5));
+}
+
+h1{
+    margin: 3rem;
+    font-size: 3rem;
+    color: rgb(63, 60, 61);
+}

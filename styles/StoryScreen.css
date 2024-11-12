@@ -1,0 +1,58 @@
+.Main{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(135deg, #bf4a1c, #9d2e0c, #7b5b3c);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.info{
+    height: 50vh;
+    width: 50vw;
+    background: linear-gradient(135deg, #550b0b, #4a1e1e, #4d0f0f); /* Blood Red Gradient */
+
+
+    border-radius: 5%;
+    color: rgb(247, 238, 238);
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+    text-align: center;
+    font-family:"MedievalSharp",cursive;
+    text-shadow: 1px 1px 1px black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+button{
+    margin-top: 1rem;
+    padding: 2rem 6rem;
+    background: linear-gradient(145deg, #905420, #fcf462);
+    border-radius: 10%;
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;   
+    border:#550b0b 1px solid;
+}
+
+button:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.Extra button{
+    padding: 1rem 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background: linear-gradient(to right,pink,rgb(151, 62, 151),gold);
+}
+
+
+  

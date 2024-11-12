@@ -1,0 +1,107 @@
+.battle-page{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(184, 42, 26);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.battle-screen{
+    height: 50%;
+    width: 50%;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+}
+
+.top{
+    height: 50%;
+    background-color: black;
+    font-size:1.6rem;
+    font-weight: bold;
+    font-family:"MedievalSharp",cursive ;
+    color: rgb(254, 252, 252);
+    text-align: center;
+    border-radius: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.fight{
+    height: 70%;
+    display: flex;
+}
+
+.player{
+    flex:1;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+}
+.enemy{
+    flex:1;
+    background-color: rgb(199, 114, 9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.enemy-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name{
+    font-family: cursive;
+    font-size:3rem;
+    color: greenyellow;
+}
+
+.enemy-hp{
+    font-family: "MedievalSharp",cursive;
+    font-weight: bold;
+    font-size:1.5rem;
+    color: gold;
+}
+
+.image{
+    height: 100%;
+    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    
+}
+
+.enemy-image{
+    height: 80%;
+    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.atk-btn{
+    background-color: gold;
+    color: crimson;
+    font-family: "MedievalSharp",cursive;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 10%;
+    margin-top: 5rem;
+
+}
+.atk-btn:hover{
+    scale:1.1;
+    cursor: pointer;
+}

@@ -1,0 +1,89 @@
+.navbar{
+    position: absolute;
+    width: 100vw;
+    height: 6.5rem;
+    background: linear-gradient(135deg, #162330, #b2613b, #b2bfd7);
+    display: flex;
+    font-size: 4rem;
+    top:0;
+
+}
+
+.inven-logo{
+    color: #f2d72c;
+
+}
+
+.inven-logo:hover{
+    cursor: pointer;
+}
+
+/* reduce % of second red(#8b0000) to reduce hp */
+.nav-icon{
+    display: flex;
+    flex-direction: column;
+    height: 4rem;
+    width: 4rem;
+    background:linear-gradient(to top,#DC143C, #8B0000 100%,white 0%);
+    border-radius: 10%;
+    margin: 0 1rem;
+    text-align: center;
+
+}   
+
+.nav-icon-p{
+    font-size: 1rem;
+    margin-top: -1.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+.atk{
+    color: rgb(220, 230, 82);
+
+}
+
+.inventory{
+
+    position: absolute;
+    left:5rem;
+    height: 20vh;
+    width:60vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    border-radius: 5%;
+}
+
+.inven-nav{
+    height: 10vh;
+    background-color: rgb(33, 32, 32);
+}
+
+.close{
+    background-color: #8B0000;
+    font-size: 1.5rem;
+    color: gold;
+    position: absolute;
+    right: 0.5rem;
+    top:0.3rem;
+    border-radius: 20%;
+}
+.close:hover{
+    cursor:grab;
+}
+
+.items{
+
+    height: 10vh;
+    background-color:#9b481b;
+    display: flex;
+
+}
+
+.item{
+    height: 100%;
+    width: 20%;
+    border: 1px solid rgb(188, 191, 93);
+}
