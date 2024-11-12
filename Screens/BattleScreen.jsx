@@ -4,12 +4,16 @@ import { getData } from "../Contexts/PlayerHealth";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-export const BattleScreen = ({images,info,edmg,	eHP,mEHP,next}) => {
+//Player Image
+const playerImage = '../images/player/fox1.gif'
+const playerAttackImage = '../images/player/atk.gif'
+
+export const BattleScreen = ({images,info,edmg,	eHP,mEHP,next,dieTime}) => {
 
 	const [enemyHP,setEnemyHP] = useState(eHP);
 	const [maxEnemyHP,setMaxEnemyHP] = useState(mEHP)
 	const { playerHP,setPlayerHP,setMaxPlayerHP,playerDMG,setPlayerDMG} = getData()
-	const {playerImage,enemyImage,enemyDeathImage} = images;
+	const {enemyImage,enemyDeathImage} = images;
 	const{message,Name} = info
 	const[attacking,setAttacking] = useState(false)
 	const[clear,setClear] = useState(false)
@@ -28,7 +32,7 @@ export const BattleScreen = ({images,info,edmg,	eHP,mEHP,next}) => {
 			setPlayerHP(hp=>hp-edps)
 			setLog(`You dealt ${dmg} dmg || enemy dealt ${edps}dmg`)
 
-		},300)	
+		},400)	
 
 	}
 
@@ -37,9 +41,8 @@ export const BattleScreen = ({images,info,edmg,	eHP,mEHP,next}) => {
 			if (playerHP <= 0 || enemyHP <= 0) {
 				setLog(playerHP <= 0 ? 'You died' : 'Enemy died');
 				setFightend(true);
-				setTimeout(()=>setClear(true),2200)
+				setTimeout(()=>setClear(true),dieTime*1000)
 				
-
 			}
 		}, [playerHP, enemyHP]);
 
@@ -61,7 +64,9 @@ export const BattleScreen = ({images,info,edmg,	eHP,mEHP,next}) => {
 				<div className="fight">
 					<div className="player">
 
-						<img src={playerImage} className="image"/>
+						{!attacking&& <img src={playerImage} className="image"/>}
+						{attacking &&
+						<img src={playerAttackImage}className="image"></img>}
 					</div>
 					<div className="enemy">
 						<div className="enemy-nav">
