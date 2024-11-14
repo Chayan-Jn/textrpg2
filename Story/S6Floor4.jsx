@@ -1,11 +1,26 @@
 
+import { useState,useRef } from 'react'
 import '../styles/Floor4.css'
 const S6Floor4 = () => {
+
+  const[scrolled,setScrolled] = useState(false)
+  const floorRef = useRef(null); 
+  const handlescroll = () =>{
+    const scrollLeft = floorRef.current.scrollLeft;
+    const scrollWidth = floorRef.current.scrollWidth;
+    const clientWidth = floorRef.current.clientWidth;
+    setScrolled(true)
+
+    if (scrollLeft + clientWidth >= scrollWidth - 300) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  }
   return (
 
     <div className='f4'>
-    
-    <div className="floor4">
+    <div className="floor4" onScroll={handlescroll} ref={floorRef}>
       <div className="wrapper">
         <div className="one portion">
           <img src='../layers/2.png' className='image'/>
@@ -28,12 +43,15 @@ const S6Floor4 = () => {
         <div className="seven portion">
           <img src='../layers/8.png' className='image'/>
         </div>
-
       </div>
     </div>
 
       <div className="lore4">
         hello
+
+        {scrolled && <div className='showProceed'>
+        <span>Proceed</span>
+        </div>}
       </div>
 
     </div>

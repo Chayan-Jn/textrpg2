@@ -112,5 +112,41 @@ section{
     top:0;
     left:90vw;
     border:1px solid black;
+
+    display: flex;
+    flex-direction: column;
     
+}
+
+
+/* @keyframes flickerAnimation {
+    0% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    80% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 1;
+    }
+  } */
+.showProceed{
+    z-index: 100;
+    margin-top: auto;
+    background-color: #333;
+    color: white;
+    padding:1rem;
+    font-weight: bold;
+    border-top-right-radius: 30%;
+    border:solid 3px white;
+    animation:flickerAnimation 1s infinite;
+
+}
+
+.showProceed:hover{
+    opacity: 1;
+   cursor:grab;
 }
