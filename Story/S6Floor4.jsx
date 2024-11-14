@@ -1,6 +1,7 @@
 
 import { useState,useRef } from 'react'
 import '../styles/Floor4.css'
+import { Link } from 'react-router-dom'
 const S6Floor4 = () => {
 
   const[scrolled,setScrolled] = useState(false)
@@ -47,11 +48,15 @@ const S6Floor4 = () => {
     </div>
 
       <div className="lore4">
-        hello
+        The purple-lit forest on the fourth floor feels unnervingly alive, its eerie glow casting shifting shadows among the trees. The air hums with a soft, disembodied whisper, and the ground shifts beneath your feet as though the forest is watching, waiting. There's a strange sense of being both drawn in and observed, the atmosphere thick with an unspoken presence.
+        hint:"scroll to move through the forest"
 
-        {scrolled && <div className='showProceed'>
-        <span>Proceed</span>
-        </div>}
+        {scrolled && 
+        <Link className='showProceed' to={"/Floor3"}>
+          <div >
+            <span>Proceed</span>
+          </div>
+        </Link>}
       </div>
 
     </div>

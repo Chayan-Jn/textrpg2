@@ -8,6 +8,15 @@ import { Link } from "react-router-dom";
 const playerImage = '../images/player/fox1.gif'
 const playerAttackImage = '../images/player/atk.gif'
 
+/*
+{enemyImage,enemyDeathImage} = images
+{message,Name} = info
+edmg
+eHp
+mEHP
+next
+dieTime
+*/
 export const BattleScreen = ({images,info,edmg,	eHP,mEHP,next,dieTime}) => {
 
 	const [enemyHP,setEnemyHP] = useState(eHP);

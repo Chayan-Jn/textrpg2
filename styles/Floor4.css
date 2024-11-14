@@ -115,6 +115,10 @@ section{
 
     display: flex;
     flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    color: rgb(233, 187, 205);
     
 }
 
@@ -143,10 +147,12 @@ section{
     border-top-right-radius: 30%;
     border:solid 3px white;
     animation:flickerAnimation 1s infinite;
-
 }
 
 .showProceed:hover{
-    opacity: 1;
+
    cursor:grab;
+   animation:none;
+   background-color: white;
+   color: #333;
 }
