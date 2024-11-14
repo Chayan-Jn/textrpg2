@@ -2,19 +2,47 @@
 import '../styles/Floor4.css'
 const S6Floor4 = () => {
   return (
-    <div className="wrapper">
-        <header>
-            <img src="../layers/prlx1.png" alt="" className="background" />
-            <img src="../layers/prlx2.png" alt="" className="foreground" />
-            <img src="../layers/prlx3.png" alt="" className="third" />
-            <h1 className='title'>hi</h1>
-        </header>
-        <section>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ipsa illo odio dicta tenetur, pariatur necessitatibus accusamus veniam iusto distinctio deserunt placeat molestiae. Distinctio optio laboriosam doloremque magni consequuntur omnis! Assumenda in velit odit dolor quae minus eveniet rem sunt fuga aperiam ipsa maxime animi quos porro, laboriosam et? Dolorum nulla modi dolor aut assumenda libero deserunt at facere! Molestias velit esse voluptates quos atque libero consectetur ab, illum, a accusamus sunt architecto consequatur in minus neque similique quidem nisi tenetur recusandae deserunt aperiam sint. Iusto perferendis eaque ex. Impedit neque similique aliquam vitae sapiente animi, laudantium enim aperiam non dignissimos id totam! A ducimus cupiditate explicabo dolorem porro quaerat, possimus sit amet blanditiis minima voluptate quibusdam nemo maiores voluptas neque, aspernatur, excepturi non voluptatem magnam velit in consequuntur harum atque iste! Sit nemo, ut error reprehenderit impedit in sint nulla obcaecati? Fuga delectus sunt cumque dolorem a magnam ut, ratione incidunt placeat rem adipisci doloremque velit reiciendis id voluptatibus illum eos dicta? Numquam possimus necessitatibus tempora et aut quas voluptates vel iste aliquam vero laborum, officiis dolorem molestiae quidem magnam consequatur hic, temporibus, rem iusto cumque alias similique placeat ipsam. Nulla vitae nam recusandae in aliquid nisi, tempore aut voluptate reprehenderit? Reiciendis, dolore facere tenetur voluptatum deserunt iste iusto itaque? Quibusdam at alias iste tenetur obcaecati quidem eos saepe, minus unde quae id error nostrum possimus fuga repellat sapiente! Explicabo quibusdam expedita rem similique perferendis placeat illo quam sequi ex quidem corrupti facilis modi labore ab doloribus possimus architecto, laborum exercitationem minima maiores? Quas accusantium vitae facere optio dicta exercitationem quos asperiores fugiat rem excepturi, unde error quis explicabo temporibus dolores? Sapiente, optio, ipsam velit recusandae autem distinctio modi aspernatur nostrum earum culpa illum libero quis, ad sunt adipisci error obcaecati quibusdam necessitatibus illo dolore rerum nesciunt alias. Provident autem quos explicabo, quibusdam delectus illo quaerat rem quasi inventore quidem numquam nobis sed eius fuga hic vel laboriosam nihil assumenda eveniet doloremque? Earum obcaecati, animi praesentium nihil nam, totam laudantium quisquam ducimus quod quaerat ea similique quam ex fugit quae, enim adipisci quo impedit tenetur. Recusandae non rerum hic commodi aliquid veniam cupiditate vel iure eveniet laudantium nam quia provident soluta quos eius, similique saepe dicta! Odio quasi eaque inventore rem, laboriosam, nihil voluptates voluptate tempore cum officia sed laborum porro in omnis minus! Repellat mollitia nobis odio. Quae voluptatem debitis minima sit numquam deserunt repellendus facilis explicabo! Cupiditate, officia error! Dolor quam repellendus minima maxime amet quod, ipsum odit possimus! Natus eius omnis reprehenderit ex vitae labore, impedit facere possimus modi vero ratione accusamus nesciunt laudantium! Ad debitis, consectetur magni labore nulla officia consequatur, aperiam cupiditate fugiat eius cumque ab velit, soluta repudiandae et itaque quod. Id nihil aspernatur harum sit ullam? Fugit laboriosam sed, illo eos laborum nihil odio reprehenderit sit eaque ab molestiae? Dolorum voluptatum ratione, nulla, sapiente provident laboriosam deserunt fugit minima dolore pariatur quos perferendis ipsum et rem vitae, nemo repellat blanditiis a iure expedita! Ut tempore tenetur nam distinctio voluptas? Modi rem omnis saepe fugit nesciunt recusandae beatae error iure totam aspernatur sint, perspiciatis doloribus! Voluptatum, tenetur eaque optio modi quasi perspiciatis numquam dignissimos cumque officia nobis. Ipsam non magnam itaque rerum ab ipsum, facere sit nobis corporis in impedit illum mollitia aspernatur odio voluptate omnis eligendi voluptatem ex temporibus consequatur! Nihil, doloremque fugiat. Eius beatae ullam earum, ad repellat culpa velit possimus repellendus iusto assumenda eum eligendi, explicabo architecto repudiandae officia deserunt, iste pariatur. Nam officia cupiditate expedita fugit voluptatem doloribus, dolore, voluptatibus aliquid quod exercitationem hic commodi quo, quos reprehenderit recusandae dolorem. Cum eaque ex perferendis ipsum odit impedit soluta, officia excepturi dolorem quia quas aliquam quidem vel. Deserunt, minima. Voluptatem sit quasi sint modi, ipsa, maiores ab rerum dolores beatae tempora nemo praesentium est, atque vitae iure voluptatibus aperiam pariatur totam! Fuga commodi, cum, ullam doloremque nam atque adipisci a perspiciatis porro culpa in quod facere! Odio ipsum amet consequuntur ab praesentium fugit facilis laudantium quae. Esse, hic, reiciendis est perferendis enim quia unde quam, velit accusantium cumque officiis nulla adipisci quos iusto! Nulla ipsam quas eum officiis suscipit architecto iusto modi dignissimos consequatur facere natus at fugiat obcaecati, ex minima beatae possimus sapiente assumenda itaque tempora similique. Architecto perspiciatis quae rerum eveniet, odit, cumque libero consequatur magni suscipit deserunt nihil et doloremque. Quisquam rem atque odit ducimus maxime accusamus, repudiandae repellat eum sit ullam laboriosam reiciendis veniam ipsam tenetur dolorum omnis dolores tempora modi officia exercitationem! Ducimus aliquam voluptas tempore obcaecati, natus consequuntur blanditiis ea perspiciatis quaerat? Enim nisi quae ipsam totam sunt tenetur a quas, pariatur odit est ab harum, blanditiis dignissimos quibusdam voluptatem, alias iusto culpa dicta ad! Adipisci pariatur, neque ex enim dicta distinctio maiores nisi, asperiores animi at, voluptatem cupiditate atque eius iure suscipit vitae explicabo ratione! Illum et ad sint eos nesciunt recusandae facere?
-        </section>
+
+    <div className='f4'>
+    
+    <div className="floor4">
+      <div className="wrapper">
+        <div className="one portion">
+          <img src='../layers/2.png' className='image'/>
+        </div>
+        <div className="two portion ">
+          <img src='../layers/3.png' className='image'/>
+        </div>
+        <div className="three portion">
+          <img src='../layers/4.png' className='image'/>
+        </div>
+        <div className="four portion">
+          <img src='../layers/5.png' className='image'/>
+        </div>
+        <div className="five portion">
+          <img src='../layers/6.png' className='image'/>
+        </div>
+        <div className="six portion">
+          <img src='../layers/7.png' className='image'/>
+        </div>
+        <div className="seven portion">
+          <img src='../layers/8.png' className='image'/>
+        </div>
+
+      </div>
+    </div>
+
+      <div className="lore4">
+        hello
+      </div>
 
     </div>
+
+
   )
+
+
+
 }
 
 export default S6Floor4

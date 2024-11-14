@@ -1,4 +1,4 @@
-
+/* 
 .wrapper{
     height: 100vh;
     overflow-y:auto;
@@ -23,13 +23,13 @@ header{
 }
 
 .background{
-    transform: translateZ(-20px) scale(3);
+    transform: translateZ(-40px) scale(6);
 }
 .foreground{
-    transform: translateZ(-10px) scale(2);
+    transform: translateZ(-20px) scale(4);
 }
 .third{
-    transform: translateZ(-5px) scale(1.5);
+    transform: translateZ(-10px) scale();
 }
 
 .background,.foreground,.third{
@@ -45,4 +45,72 @@ section{
     padding: 2rem;
     background-color: #333;
     color: white;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.floor4{
+    height: 100vh;
+    width: 100vw;
+    overflow-y: hidden;
+    overflow-x: auto;
+    perspective: 10px;
+    display: flex;
+}
+
+.wrapper{
+    position: relative;
+    width:  100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.portion{
+    height: 100vh;
+    width: 130%;
+    position: absolute;
+    transform: translateZ(-1px) scale(1.5);
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+.one{
+    transform: translateZ(-8px) scale(1.8);
+}
+.two{
+    transform: translateZ(-7px) scale(1.7);
+}
+.three{
+    transform: translateZ(-6px) scale(1.6);
+}
+.four{
+    transform: translateZ(-5px) scale(1.5);
+}
+.five{
+    transform: translateZ(-4px) scale(1.4);
+}
+.six{
+    transform: translateZ(-3px) scale(1.3);
+}
+.seven{
+    transform: translateZ(-2px) scale(1.2);
+}
+
+.f4{
+    display: flex;
+}
+
+.lore4{
+    background: linear-gradient(to right,rgb(172, 35, 58),crimson);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top:0;
+    left:90vw;
+    border:1px solid black;
+    
 }
