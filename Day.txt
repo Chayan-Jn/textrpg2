@@ -1,5 +1,6 @@
 Day 6
 Day 8
+Day 9
 
 
 
@@ -8,3 +9,7 @@ Day 8
 //parallax bg https://aethrall.itch.io/demon-woods-parallax-background/
 
 // pcrow https://gabry-corti.itch.io/plague-crow
+
+// https://single-cell-studio.itch.io/animated-potions
+
+// gxpot https://raventale.itch.io/daily-doodles-asset-pack-2/download/eyJpZCI6MjQ4NzI1LCJleHBpcmVzIjoxNzMxNjg5NjgwfQ%3d%3d%2eo%2bqeopORS66qor8ozdFxbzANqJ0%3d

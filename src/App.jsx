@@ -7,6 +7,9 @@ import S4Floor6 from '../Story/S4Floor6.jsx'
 import S5Floor5 from '../Story/S5Floor5.jsx'
 import S6Floor4 from '../Story/S6Floor4.jsx'
 import S7Floor3 from '../Story/S7Floor3.jsx'
+import S8Floor2 from '../Story/S8Floor2.jsx'
+import S9Shop from '../Story/S9Shop.jsx'
+import S10Final from '../Story/S10Final.jsx'
 
 const router = createBrowserRouter([
   {
@@ -40,6 +43,18 @@ const router = createBrowserRouter([
   {
     path:"/Floor3",
     element:<S7Floor3/>
+  },
+  {
+    path:"/Floor2",
+    element:<S8Floor2/>
+  },
+  {
+    path:"/shop",
+    element:<S9Shop/>
+  },
+  {
+    path:"/Final",
+    element:<S10Final/>
   }
 ])
 
