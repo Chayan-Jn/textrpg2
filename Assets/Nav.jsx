@@ -5,32 +5,89 @@ import { FiCodepen, FiCodesandbox } from "react-icons/fi";
 import { GiShardSword } from "react-icons/gi";
 import { getData} from '../Contexts/PlayerHealth';
 
-const Inventory = ({open,setOpen}) =>{
+const Inventory = ({open,setOpen,setEnemyHP,setPlayerDMG,setPlayerHP,invitems,setInvItems,maxPlayerHP}) =>{
 	return(
 		<div className='inventory'>
 			<div className='inven-nav'>
 				<p onClick={()=>setOpen(false)} className='close'>Close</p>
 			</div>
 			<div className='items'>
-				<div className="item"></div>
-				<div className="item"></div>
-				<div className="item"></div>
-				<div className="item"></div>
-				<div className="item"></div>
+				{invitems.map((item)=>(
+					<div className="item" key={item.id} onClick={()=>handleuse(item,setEnemyHP,setPlayerDMG,setPlayerHP,setInvItems,maxPlayerHP)}>
+						<img src={item.src} className='slot-item-img' 	/>
+					</div>
+				))}
 
 			</div>
 		</div>	
 	)
 }
 
+const handleuse = (item,setEnemyHP,setPlayerDMG,setPlayerHP,setInvItems,maxPlayerHP)=>{
 
-const Nav = () => {
+	const newItem = { ...item };
+	// const {
+	// 	playerHP,
+	// 	setPlayerHP,
+	// 	maxPlayerHP,
+	// 	setMaxPlayerHP,
+	// 	playerDMG,
+	// 	setPlayerDMG,
+	// 	invitems,
+	// 	setInvItems
+	// } = getData()
 
-  let {playerHP,maxPlayerHP,playerDMG} = getData()
+
+	switch(item.src) {
+	  case '../images/shop/hppot.gif':
+		setPlayerHP(hp=>Math.min(hp+20,maxPlayerHP))
+		break;
+	  case '../images/shop/elecpot.gif':
+		setEnemyHP(hp=>hp-25)
+		break;
+	  case '../images/shop/gxpot.gif':
+		break;
+	  case '../images/shop/strpot.gif':
+		setPlayerDMG(dmg=>dmg+2)
+		break;
+	  default:
+		break;
+	}
+	setInvItems((prev)=>(
+		prev.map((invitem)=>(
+			invitem.id === item.id?{...newItem,src:'',empty:true}:invitem //Replacing the item that was used
+		))
+	))
+
+
+
+}
+
+
+const Nav = ({setEnemyHP}) => {
+
+	const {
+		playerHP,
+		setPlayerHP,
+		maxPlayerHP,
+		setMaxPlayerHP,
+		playerDMG,
+		setPlayerDMG,
+		invitems,
+		setInvItems
+	} = getData()
+
   const [inventoryOpen, setInventoryOpen] = useState(false)
   return (
 	<>
-		{inventoryOpen && <Inventory open={inventoryOpen} setOpen={setInventoryOpen}/>}
+		{inventoryOpen && <Inventory 
+		setEnemyHP={setEnemyHP}
+		setPlayerDMG = {setPlayerDMG}
+		setPlayerHP = {setPlayerHP}
+		setInvItems = {setInvItems}
+		invitems = {invitems}
+		maxPlayerHP = {maxPlayerHP}
+		open={inventoryOpen} setOpen={setInventoryOpen}/>}
 		<div className="navbar">
 			<div className='inven-logo' onClick={()=>setInventoryOpen(prev=>!prev)}>    
 				<div>

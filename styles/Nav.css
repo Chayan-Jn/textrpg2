@@ -79,6 +79,8 @@
     height: 10vh;
     background-color:#9b481b;
     display: flex;
+    justify-content: center;
+    align-items: center;
     
 
 }
@@ -87,4 +89,17 @@
     height: 100%;
     width: 20%;
     border: 1px solid rgb(188, 191, 93);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:hover{
+    cursor: pointer;
+}
+
+.slot-item-img{
+    background-color: rgb(51, 33, 33);
+    height: 90%;
+    border-radius: 25%;
 }

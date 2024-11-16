@@ -63,7 +63,7 @@ export const BattleScreen = ({images,info,edmg,	eHP,mEHP,next,dieTime}) => {
 
   return (
     <>
-      <Nav/>
+      <Nav setEnemyHP={setEnemyHP}/>
       <div className="battle-page">
 
 			<div className="battle-screen">

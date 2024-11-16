@@ -1,7 +1,8 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Nav from "../Assets/Nav"
 import StoryScreen from "../Screens/StoryScreen"
 import { Link } from "react-router-dom"
+import { getData } from "../Contexts/PlayerHealth"
 
 const text = "As you climb to the sixth floor, you're met with an unsettling silence — nothing just emptiness. But then, in the corner, you spot a small vial of dark, swirling liquid. There's no label, no indication of its purpose. The dim light catches the liquid's shimmer, almost as if it’s calling to you. You hesitate, wondering if it’s worth the risk to take it or if you should leave it behind."
 
@@ -17,6 +18,32 @@ const choiceStyle = {
 }
 const Choices = ()=>{
   const [chose,setChosen] = useState('')
+  const {invitems,setInvItems} = getData()
+  const potionsrc = '../images/shop/hppot.gif'
+  const firstemptyslot = invitems.find(item=>item.empty)
+
+  const handletook = ()=>{
+    
+    if(!firstemptyslot){
+      alert("Inventory is full ")
+      return;
+    }
+    setInvItems((prev)=>(
+      prev.map((item)=>(
+        item.id===firstemptyslot.id?{
+          ...item,src:potionsrc,empty:false}:item
+        
+      ))
+    ))
+
+  }
+
+  useEffect(()=>{
+    if(chose == 'took'){
+      handletook();
+    }
+  },[chose])
+
   return(
     <div>
       {!chose && (
@@ -31,6 +58,7 @@ const Choices = ()=>{
         <div style={choiceStyle}>You decide not to touch it</div>:
         <div style={choiceStyle}>You pick it up and put it in your Inventory </div>}
       </>}
+
 
 
     </div>
