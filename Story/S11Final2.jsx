@@ -14,7 +14,7 @@ dieTime
 
 const images2 = {enemyImage:'../images/final/snake1.gif',enemyDeathImage:'../images/final/snakedie.gif'}
 
-const info2 =  {messsage:"cat disappeared snake appeared??",Name:'Snek'}
+const info2 =  {message:"cat disappeared snake appeared??",Name:'Snek'}
 
 const S11Final2 = () => {
 
