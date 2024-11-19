@@ -13,7 +13,7 @@
 .dream div{
     text-align: center;
     background-color: #211;
-    animation: flicker 1s infinite ;
+    animation: flicker 2s infinite ;
 }
 
 .sleep{
