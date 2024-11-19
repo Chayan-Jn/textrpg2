@@ -21,6 +21,7 @@ export const HealthProvider = ({children})=>{
         { id: 4, name: '', src: '', empty: true },
         { id: 5, name: '', src: '', empty: true }
     ])
+    const[gold,setGold] = useState(50)
 
 
 
@@ -32,7 +33,9 @@ export const HealthProvider = ({children})=>{
         playerDMG,
         setPlayerDMG,
         invitems,
-        setInvItems
+        setInvItems,
+        gold,
+        setGold
     };
 
     return(

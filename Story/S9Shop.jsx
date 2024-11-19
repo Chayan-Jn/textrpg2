@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-
+import { addtoinv } from '../Assets/Nav';
+import { getData } from '../Contexts/PlayerHealth';
 
 const items = [
     { name: 'Healing potion', cost: 10, src: '../images/shop/hppot.gif' },
@@ -11,6 +12,7 @@ const items = [
 import Nav from '../Assets/Nav';
 import '../styles/shop.css'
 const S9Shop = () => {
+    const {gold,setGold,invitems,setInvItems} = getData()
   return (
 
     <div className="shop">
@@ -23,21 +25,28 @@ const S9Shop = () => {
         </div>
         <div className="shop-items">
             {
-                items.map((item)=>(
-                    <div className='shop-item'>
-
+                items.map((item,index)=>(
+                    <div className='shop-item' id={item.id}>
                     <img src={item.src} className='item-img'>
                    </img>
                    <div className='item-data'>
                     <span className='item-name'>{item.name}</span>
                     <span className='item-price'>Cost  {item.cost}</span>
-                    <span className='buy'>Buy</span>
+                    <span className='buy' onClick={()=>{
+                        if(gold>=item.cost){
+                            setGold(g=>g-item.cost)
+                        }
+                        else{
+                            alert('Not enough gold')
+                        }
+                        addtoinv(item,setInvItems,invitems);
+                    }}>Buy</span>
                     </div>                   
                    </div>
                 ))
             }
         </div>
-        <Link to={"Final"}><button>Proceed</button></Link>
+        <Link to={"/Final"}><button>Proceed</button></Link>
     </div>
   )
 }

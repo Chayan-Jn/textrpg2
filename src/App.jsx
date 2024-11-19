@@ -10,7 +10,8 @@ import S7Floor3 from '../Story/S7Floor3.jsx'
 import S8Floor2 from '../Story/S8Floor2.jsx'
 import S9Shop from '../Story/S9Shop.jsx'
 import S10Final from '../Story/S10Final.jsx'
-
+import S11Final2 from '../Story/S11Final2.jsx'
+import S12Dream from '../Story/S12Dream.jsx'
 const router = createBrowserRouter([
   {
     path:"/",
@@ -55,6 +56,14 @@ const router = createBrowserRouter([
   {
     path:"/Final",
     element:<S10Final/>
+  },
+  {
+    path:"/Final2",
+    element:<S11Final2/>
+  },
+  {
+    path:"/Dream",
+    element:<S12Dream/>
   }
 ])
 
