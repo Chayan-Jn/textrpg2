@@ -35,11 +35,12 @@ const S9Shop = () => {
                     <span className='buy' onClick={()=>{
                         if(gold>=item.cost){
                             setGold(g=>g-item.cost)
+                            addtoinv(item,setInvItems,invitems);
                         }
                         else{
                             alert('Not enough gold')
                         }
-                        addtoinv(item,setInvItems,invitems);
+
                     }}>Buy</span>
                     </div>                   
                    </div>

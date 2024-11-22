@@ -12,7 +12,7 @@ const eHP = 10
 const mEHP = 10
 const edmg = 10
 const info = {
-        Name: "C+",
+        Name: "Crow+",
         message:"As you stepped out from the eerie, purple-lit forest, its unnatural glow fading behind you, the silence was almost suffocating. The trees no longer whispered, and the distant hum of unseen creatures was gone. In the stillness, a shape emerged from the mist ahead—black as night, with feathers that shimmered like an oil slick. The Plague Crow."
       }
 const images = {

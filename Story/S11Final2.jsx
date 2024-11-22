@@ -23,7 +23,7 @@ const S11Final2 = () => {
       <div className="phase2">
         <BattleScreen 
         images={images2}
-        info={info2} edmg={10} eHP={10} mEHP={20} 
+        info={info2} edmg={7} eHP={10} mEHP={20} 
         dieTime={0.5} next={"/Dream"}/>
       </div>
 

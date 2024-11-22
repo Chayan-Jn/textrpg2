@@ -23,7 +23,10 @@
     margin-top: 1rem;
     padding: 2rem;
     animation: move 10s infinite linear;
+}
 
+.sleep:hover{
+    cursor: pointer;
 }
 
 @keyframes flicker {

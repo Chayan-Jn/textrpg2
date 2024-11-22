@@ -48,17 +48,19 @@
     position: absolute;
     left:5rem;
     height: 20vh;
-    width:60vw;
+    width:40vw;
     background-color: white;
     display: flex;
     flex-direction: column;
     z-index: 2;
     border-radius: 5%;
+    opacity: 0.8;
 }
 
 .inven-nav{
     height: 10vh;
     background-color: rgb(33, 32, 32);
+
 }
 
 .close{

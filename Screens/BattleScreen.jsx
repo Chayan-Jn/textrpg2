@@ -28,6 +28,8 @@ export const BattleScreen = ({images,info,edmg,	eHP,mEHP,next,dieTime}) => {
 	const[clear,setClear] = useState(false)
 	const[playerDead,setPlayerDead] = useState(false) // to reset if player dies
 
+	const{setGold}  = getData()
+
 	 
 	
 	function attack(){
@@ -53,6 +55,12 @@ export const BattleScreen = ({images,info,edmg,	eHP,mEHP,next,dieTime}) => {
 				setFightend(true);
 				setTimeout(()=>setClear(true),dieTime*1000)
 				if(playerHP<=0) setPlayerDead(true)
+				else{
+					const droppedGold = Math.random()*10+1;
+					setGold(g=>g+Math.floor(droppedGold))
+
+
+				}
 				
 			}
 		}, [playerHP, enemyHP]);

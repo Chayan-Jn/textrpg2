@@ -22,7 +22,7 @@ const S10Final = () => {
 
     <div className="phase1">
       <BattleScreen images={images1}
-      info={info1} edmg={7} eHP={20} mEHP={20} 
+      info={info1} edmg={17} eHP={25} mEHP={25} 
       dieTime={0} next={"/Final2"}/>
     </div>
 
