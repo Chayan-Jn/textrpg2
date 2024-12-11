@@ -11,7 +11,7 @@ const S8Floor2 = () => {
 
  
     <div className="lake">
-      <img src="../images/lake.png" alt="lake" className="bg" />
+      <img src="/images/lake.png" alt="lake" className="bg" />
       <div className='lore2'>
         <StoryScreen text={text} next={next}/>
       </div>

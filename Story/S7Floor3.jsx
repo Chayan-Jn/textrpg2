@@ -8,16 +8,16 @@ import { BattleScreen } from "../Screens/BattleScreen"
 // mEHP
 const next = "/Floor2"
 const dieTime = 3
-const eHP = 10
-const mEHP = 10
+const eHP = 20
+const mEHP = 20
 const edmg = 10
 const info = {
         Name: "Crow+",
         message:"As you stepped out from the eerie, purple-lit forest, its unnatural glow fading behind you, the silence was almost suffocating. The trees no longer whispered, and the distant hum of unseen creatures was gone. In the stillness, a shape emerged from the mist ahead—black as night, with feathers that shimmered like an oil slick. The Plague Crow."
       }
 const images = {
-  enemyImage:"../images/enemies/Pcrow.gif",
-  enemyDeathImage:"../images/enemies/Pcrowdie.gif"
+  enemyImage:"/images/enemies/Pcrow.gif",
+  enemyDeathImage:"/images/enemies/Pcrowdie.gif"
 }
 
 

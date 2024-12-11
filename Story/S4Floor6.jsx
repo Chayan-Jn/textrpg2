@@ -19,7 +19,7 @@ const choiceStyle = {
 const Choices = ()=>{
   const [chose,setChosen] = useState('')
   const {invitems,setInvItems} = getData()
-  const potionsrc = '../images/shop/hppot.gif'
+  const potionsrc = '/images/shop/hppot.gif'
   const firstemptyslot = invitems.find(item=>item.empty)
 
   const handletook = ()=>{

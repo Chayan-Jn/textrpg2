@@ -19,18 +19,18 @@ const S1Blessings = () => {
         if(result==='Choose a Blessing'){
             switch(blessing){
                 case 'curse':
-                    setResult('+10 HP');
-                    setMaxPlayerHP(hp=>hp+10);
-                    setPlayerHP(hp=>hp+10)
+                    setResult('+20 HP');
+                    setMaxPlayerHP(hp=>hp+20);
+                    setPlayerHP(hp=>hp+20)
                     break;
                 case 'electric':
                     setResult('+2 DMG');
                     setPlayerDMG((dmg) => dmg + 2);
                     break;
                 case 'claws':
-                    setResult('+5 HP , +1 DMG');
-                    setMaxPlayerHP((hp) => hp + 5);
-                    setPlayerHP((hp) => hp + 5);
+                    setResult('+10 HP , +1 DMG');
+                    setMaxPlayerHP((hp) => hp + 10);
+                    setPlayerHP((hp) => hp + 10);
                     setPlayerDMG((dmg) => dmg + 1);        
                     break;
             }

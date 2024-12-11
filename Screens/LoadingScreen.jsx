@@ -14,7 +14,7 @@ const LoadingScreen = () => {
   
   return (
     <div className='main'>
-      <audio ref={audioRef}  type="audio/mp3" src="../mp3/loadmusic.mp3" />
+      <audio ref={audioRef}  type="audio/mp3" src="mp3/loadmusic.mp3" />
         <Link to="/Beginning" className='link'>
             <button className='btn'>          
                 <GiBroadsword className='sword'/>

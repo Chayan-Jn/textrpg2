@@ -29,19 +29,19 @@ const handleuse = (item,setEnemyHP,setPlayerDMG,setPlayerHP,setInvItems,maxPlaye
 	const newItem = { ...item };
 
 	switch(item.src) {
-	  case '../images/shop/hppot.gif':
+	  case '/images/shop/hppot.gif':
 		setPlayerHP(hp=>Math.min(hp+20,maxPlayerHP))
 		break;
-	  case '../images/shop/elecpot.gif':
+	  case '/images/shop/elecpot.gif':
 		if(!setEnemyHP){
 			alert('no enemy present, wasted')
 			break;
 		}
 		setEnemyHP(hp=>hp-25)
 		break;
-	  case '../images/shop/gxpot.gif':
+	  case '/images/shop/gxpot.gif':
 		break;
-	  case '../images/shop/strpot.gif':
+	  case '/images/shop/strpot.gif':
 		setPlayerDMG(dmg=>dmg+2)
 		break;
 	  default:

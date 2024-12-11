@@ -5,8 +5,8 @@ import { useEffect, useState } from "react";
 import { Link,useNavigate } from "react-router-dom";
 
 //Player Image
-const playerImage = '../images/player/fox1.gif'
-const playerAttackImage = '../images/player/atk.gif'
+const playerImage = '/images/player/fox1.gif'
+const playerAttackImage = '/images/player/atk.gif'
 
 /*
 {enemyImage,enemyDeathImage} = images
@@ -42,7 +42,7 @@ export const BattleScreen = ({images,info,edmg,	eHP,mEHP,next,dieTime}) => {
 			setEnemyHP(hp=>hp-dmg)
 			let edps = Math.floor(Math.random()*edmg)
 			setPlayerHP(hp=>hp-edps)
-			setLog(`You dealt ${dmg} dmg || enemy dealt ${edps}dmg`)
+			setLog(`You dealt ${dmg} dmg ||| enemy dealt ${edps} dmg`)
 
 		},400)	
 

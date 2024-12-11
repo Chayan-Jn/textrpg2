@@ -6,19 +6,19 @@ const about= "You step cautiously onto floor 10, the first true challenge of you
 const dmg = 3
 const dieTime = 2
 const S3Floor7 = () => {
-  const[enemyHP,setEnemyHP] = useState(10)
-  const [maxEnemyHP,setMaxEnemyHP] = useState(10)
+  const[enemyHP,setEnemyHP] = useState(15)
+  const [maxEnemyHP,setMaxEnemyHP] = useState(15)
   return (
     <div>
         <BattleScreen
                 images={
                     { 
-                    enemyImage: './images/enemies/DemonSlime.gif',
-                    enemyDeathImage:'/images/enemies/DemonSlimeDie.gif' }
+                    enemyImage: 'images/enemies/DemonSlime.gif',
+                    enemyDeathImage:'images/enemies/DemonSlimeDie.gif' }
                   }
                   info={{ 
                     message: about,
-                    Name: "???"
+                    Name: "Slime Demon"
                   }}
                   edmg={dmg}
                   eHP={enemyHP}

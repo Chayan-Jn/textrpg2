@@ -5,8 +5,8 @@ const info = {Name:"Ae21",
   message:"As you step onto Floor 5, a strange ripple distorts the air before you. Suddenly, a figure materializes before you—its form both ethereal and solid, with countless magical arms swirling around it. Each arm moves with a life of its own, glowing with vibrant energy. The being's piercing gaze locks onto yours, and a voice echoes in your mind 'I am the guardian of this floor'"
 }
 const images = {
-  enemyImage:"../images/enemies/aegis.gif",
-  enemyDeathImage:"../images/enemies/aegisdeath.gif"
+  enemyImage:"/images/enemies/aegis.gif",
+  enemyDeathImage:"/images/enemies/aegisdeath.gif"
 }
 
 const edmg = 5

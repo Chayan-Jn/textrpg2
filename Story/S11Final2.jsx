@@ -12,7 +12,7 @@ next
 dieTime
 */
 
-const images2 = {enemyImage:'../images/final/snake1.gif',enemyDeathImage:'../images/final/snakedie.gif'}
+const images2 = {enemyImage:'/images/final/snake1.gif',enemyDeathImage:'/images/final/snakedie.gif'}
 
 const info2 =  {message:"cat disappeared snake appeared??",Name:'Snek'}
 

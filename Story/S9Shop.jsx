@@ -3,10 +3,10 @@ import { addtoinv } from '../Assets/Nav';
 import { getData } from '../Contexts/PlayerHealth';
 
 const items = [
-    { name: 'Healing potion', cost: 10, src: '../images/shop/hppot.gif' },
-    { name: 'Gx3789', cost: 200, src: '../images/shop/gxpot.gif' },
-    { name: 'Strength Potion', cost: 25, src: '../images/shop/strpot.gif' },
-    { name: 'Liquid Electriciy', cost: 50, src: '../images/shop/elecpot.gif' }
+    { name: 'Healing potion', cost: 10, src: '/images/shop/hppot.gif' },
+    { name: 'Gx3789', cost: 200, src: '/images/shop/gxpot.gif' },
+    { name: 'Strength Potion', cost: 25, src: '/images/shop/strpot.gif' },
+    { name: 'Liquid Electriciy', cost: 50, src: '/images/shop/elecpot.gif' }
 ];
 
 import Nav from '../Assets/Nav';
@@ -18,10 +18,10 @@ const S9Shop = () => {
     <div className="shop">
         <Nav/>
         <div className="shop-name">
-            Shop
+            Shopey Shop
         </div>
         <div className="shop-board">
-            <img src={'../images/shop.png'}/>
+            <img src={'/images/shop.png'}/>
         </div>
         <div className="shop-items">
             {

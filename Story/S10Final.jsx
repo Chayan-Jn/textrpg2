@@ -11,7 +11,7 @@ mEHP
 next
 dieTime
 */
-const images1 = {enemyImage:'../images/final/evilcat.gif',
+const images1 = {enemyImage:'/images/final/evilcat.gif',
   enemyDeathImage:''
 }
 
