@@ -1,4 +1,6 @@
+A short text rpg made using React
 Link: https://textrpg2.netlify.app
+
 
 
 
