@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import { addtoinv } from '../Assets/Nav';
 import { getData } from '../Contexts/PlayerHealth';
-
+import Nav from '../Assets/Nav';
+import '../styles/shop.css'
 const items = [
     { name: 'Healing potion', cost: 10, src: '/images/shop/hppot.gif' },
     { name: 'Gx3789', cost: 200, src: '/images/shop/gxpot.gif' },
@@ -9,8 +10,7 @@ const items = [
     { name: 'Liquid Electriciy', cost: 50, src: '/images/shop/elecpot.gif' }
 ];
 
-import Nav from '../Assets/Nav';
-import '../styles/shop.css'
+
 const S9Shop = () => {
     const {gold,setGold,invitems,setInvItems} = getData()
   return (

@@ -23,8 +23,6 @@ export const HealthProvider = ({children})=>{
     ])
     const[gold,setGold] = useState(50)
 
-
-
     const value = {
         playerHP,
         setPlayerHP,

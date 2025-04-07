@@ -27,7 +27,6 @@ const S11Final2 = () => {
         dieTime={0.5} next={"/Dream"}/>
       </div>
 
-
   )
 }
 
